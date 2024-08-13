@@ -1,0 +1,1 @@
+console.log("train js file ishga tushdi");
