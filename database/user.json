@@ -1,0 +1,22 @@
+{
+    "name": "Steve",
+    "profession": "Software Engineer",
+    "age": 20,
+    "residence": "S.Korea",
+    "freelance": "Availabe",
+    "adress": "S.Korea, Busan",
+    "languages": ["Uzbek", "English", "Korean"],
+    "skills": ["HTML", "CSS", "JS", "NODEJS", "PYTHON"],
+    "extra-skills": ["Bootstrap", "Materilize", "Styling", "SASS", "Django", "FLask", "Git knowledge"],
+    "workplace": "IT Company",
+    "servicedesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    "aboutme": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+    "city": "Denau",
+    "title": ["Flower", "Seedlings", "Gardener", "Old", "New"],
+    "flowerdesc": ["what is a flower?", "what is a Seedling", "who is Gardener"],
+    "flowername": ["Tulip", "Daffodil", "Poppy", "Sunflower", "Bluebell", "Rose", "Snowdrop", "Cherry","blossom" ],
+    "flowerprice" : ["15$", "25$", "20$", "35$", "30$", "22$", "19$", "95$"],
+    "famouswords": ["World is Beatiful with Flowers"],
+    "famousname": ["Steve Jobs"]
+    
+}

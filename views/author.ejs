@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="frame">
+        <div class="main-frame">
+            <div class="left-frame">
+                <div class="left_1">
+                    <div class="left_1-image">
+                        <img src="/images/profile.png" alt="profile.png">
+                    </div>
+                    <div class="left_1-name"><%=user.name%></div>
+                    <div class="left_1-profession"><%=user.profession%></div>
+                    <div class="left_1-icons">
+                        <a  href="#" class="link_href">
+                            <div class="icon">
+                                <img src="/icon/Facebook.png" alt="facebook.png" class="icon-1">
+                            </div>
+                        </a>
+                        <a  href="#" class="link_href">
+                            <div class="icon">
+                                <img src="/icon/Instagram.png" alt="instagram.png" class="icon-1">
+                            </div>
+                        </a>
+                         <a  href="#" class="link_href">
+                            <div class="icon">
+                                <img src="/icon/Twitter.png" alt="twitter.png" class="icon-1">
+                            </div>
+                        </a>
+                        <a  href="#" class="link_href">
+                            <div class="icon">
+                                <img src="/icon/Linkeding.png" alt="linkedin.png" class="icon-1">
+                            </div>
+                        </a>
+                        <a  href="#" class="link_href">
+                            <div class="icon">
+                                <img src="/icon/Youtube.png" alt="youtube.png" class="icon-1">
+                            </div>
+                        </a>
+                        <a  href="#" class="link_href">
+                            <div class="icon">
+                                <img src="/icon/Dribbble.png" style="padding-top: 5px;" alt="dribble.png" class="icon-1">
+                            </div>
+                        </a>
+                        
+                        
+                    </div>
+                 </div>
+                <div class="marginer"></div>
+                <div class="left_2">
+                    <div class="container">
+                        <div class="header">Age:</div>
+                        <div class="value"><%=user.age%></div>
+                      </div>
+                      
+                      <div class="container">
+                        <div class="header">Residence:</div>
+                        <div class="value"><%=user.residence%></div>
+                      </div>
+                      
+                      <div class="container">
+                        <div class="header">Freelance:</div>
+                        <div class="value available"><%=user.freelance%></div>
+                      </div>
+                      
+                      <div class="container">
+                        <div class="header">Address:</div>
+                        <div class="value"><%=user.adress%></div>
+                      </div>
+                </div>
+                <div class="marginer"></div>
+                <div class="left_3">
+                    <h1 class="header-lang">Languages</h1>
+
+                    <div class="container">
+                      <div class="language">Uzbek</div>
+                      <div class="percentage">100%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 100%;"></div>
+                      </div>
+                    
+                    <div class="container">
+                      <div class="language">English</div>
+                      <div class="percentage">80%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 80%;"></div>
+                      </div>
+                    
+                    <div class="container">
+                      <div class="language">Korean</div>
+                      <div class="percentage">60%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 60%;"></div>
+                      </div>
+                    
+
+                </div>
+                <div class="marginer"></div>
+                <div class="div_4">
+                    <h1 class="header-skill">Skills</h1>
+
+                    <div class="container2">
+                       <div class="skill">HTML</div>
+                      <div class="percentage">100%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 100%;"></div>
+                      </div>
+                    
+                    <div class="container2">
+                      <div class="">CSS</div>
+                      <div class="percentage">80%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 80%;"></div>
+                      </div>
+                    
+                    <div class="container2">
+                      <div class="language">NODEJS</div>
+                      <div class="percentage">60%</div>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-bar-fill" style="width: 60%;"></div>
+                      </div>
+
+                      <div class="container2">
+                        <div class="language">PYTHON</div>
+                        <div class="percentage">70%</div>
+                      </div>
+                      <div class="skill-bar">
+                          <div class="skill-bar-fill" style="width: 70%;"></div>
+                        </div>
+                    
+
+                </div>
+
+                <div class="marginer"></div>
+                <div class="div_5">
+                    <h1 class="extra-skill">Extra skills</h1>
+                    <div class="container-extra-skill">
+                        <img src="/icon/Icons.png" alt="img.png" class="skill-icon">
+                        <div class="extra-skill-item">Bootstrap, Materialize</div>
+                    </div>
+                    <div class="container-extra-skill">
+                        <img src="/icon/Icons.png" alt="img.png" class="skill-icon">
+                        <div class="extra-skill-item">Styling, Sass</div>
+                    </div>
+                    <div class="container-extra-skill">
+                        <img src="/icon/Icons.png" alt="img.png" class="skill-icon">
+                        <div class="extra-skill-item">Flask, Django</div>
+                    </div>
+                    <div class="container-extra-skill">
+                        <img src="/icon/Icons.png" alt="img.png" class="skill-icon">
+                        <div class="extra-skill-item">Git knowledge</div>
+                    </div>
+                    
+                </div>
+            </div> 
+            </div>
+            <div class="midd-frame">
+                <div class="midd-frame-container">
+                    <div>
+                      <h1 class="midd-frame-header"><%=user.workplace%></h1>
+                      <p class="midd-frame-parag"><%=user.servicedesc%></p>
+                      <button class="midd-frame-btn">HIRE ME <img class="btn-svg" src="/btn_icon/Vector.svg" alt="svg"></button>
+                    </div>
+                    <img src="/author/Your Image 1.png" alt="IT" class="author-img">
+                  </div>
+
+                 <div class="service-container">
+                 <div class="service">
+                     <h1 class="service-header">My service</h1> 
+                     <p class="service-parag"><%=user.aboutme%></p>
+                 </div>
+                 </div>
+                 <div class="flex-container">
+                    <div class="square">
+                        <img src="/menu_icon/Icons_coding.svg" alt="coding.svg" class="square-icn">
+                        <h2 class="square-header">web development</h2>
+                        <p class="square-parag">blog, e-commerce</p>
+                    </div>
+                    <div class="square">
+                        <img src="/menu_icon/Icons_game-development.svg" alt="game.svg" class="square-icn">
+                        <h2 class="square-header">Flower</h2>
+                        <p class="square-parag">what is a flower?</p>
+                    </div>
+                    <div class="square">
+                        <img src="/menu_icon/Icons_illustration.svg" alt="illustrtion.svg" class="square-icn">
+                        <h2 class="square-header">uI/uX design</h2>
+                        <p class="square-parag">Mobile app, website design</p>
+                    </div>
+                    <div class="square">
+                        <img src="/menu_icon/Icons_Microphone.svg" alt="microphone.svg" class="square-icn">
+                        <h2 class="square-header">sound design</h2>
+                        <p class="square-parag">Voice Over, Beat Making</p>
+                    </div>
+                    <div class="square">
+                        <img src="/menu_icon/Icons_Photographer.svg" alt="photographer.svg" class="square-icn">
+                        <h2 class="square-header">photography</h2>
+                        <p class="square-parag">portrait, product photography</p>
+                    </div>
+                    <div class="square">
+                        <h2 class="square-header">Advertising</h2>
+                        <p class="advert-parag">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.</p>
+                        <a href="#" class="advert-link">Order now <img src="/btn_icon/advertising.svg" alt="img.svg"></a>
+                    </div>
+                 </div>
+                 
+                 
+            </div>
+            <div class="right-frame">
+                <ul class="list">
+                    <li class="list-item"> <button class="list-item-btn"><img class="sidebar-svg" src="/btn_icon/Icons_Home.svg" alt="home"></button></li> 
+                    <li class="list-item"><button class="list-item-btn"><img class="sidebar-svg" src="/btn_icon/Icons_Services.svg" alt="sevice.svg"></button></li>
+                    <li class="list-item"><button class="list-item-btn"><img class="sidebar-svg" src="/btn_icon/Icons_cv.svg" alt="cv.svg"></button></li>
+                    <li class="list-item"><button class="list-item-btn"><img class="sidebar-svg" src="/btn_icon/Icons_Portfolio.svg" alt="portfolio.svg"></button></li>
+                    <li class="list-item"><button class="list-item-btn"><img class="sidebar-svg" src="/btn_icon/Icons_Blog.svg" alt="blog.svg"></button></li>              
+                </ul>
+            </div>
+                
+        </div>
+    </div>
+</body>
+</html>
