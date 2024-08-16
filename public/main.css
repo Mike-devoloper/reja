@@ -23,12 +23,13 @@
     position: relative;
     width: 305px;
     height: 1315px;
+    margin-left: 50px;
     background-color: white;
 }
 
 .main-frame .midd-frame {
  position: relative;
- width: 970px;
+ width: 1000px;
  height: 1259px;
  margin-left:30px;
  margin-right: 27px;
@@ -39,7 +40,7 @@
 }
  .right-frame {
     position: relative;
-    width: 120px;
+    width: 144px;
     height: 1315px;
     margin-left: 30px;
     margin-top: 5px;
@@ -263,9 +264,9 @@
   }
    
   .midd-frame-container {
-    width: 800px;
-    height: 400px;
-    margin-left: 200px;
+    width: 850px;
+    height: 500px;
+    margin-left: 300px;
     margin-top: 5px;
     background-color: white;
     display: flex;
@@ -277,13 +278,17 @@
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    padding-left: 10px;
+    padding-left: 30px;
   }
   
   .midd-frame-parag {
     font-size: 1.2rem;
     line-height: 1.5;
-    padding-left: 10px;
+    padding-left:30px;
+  }
+
+  .wrapper {
+    padding-left: 30px;
   }
   
   .midd-frame-btn {
@@ -304,10 +309,9 @@
  }
 
  .service-container {
+   width: 1020px;
     height: 300px;
-    width: 600px;
     margin-top: 20px;
-    padding-left: 180px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -316,12 +320,16 @@
  }
 
  .service-header {
-    font-size: 25px;
+    font-size: 35px;
+ }
+
+ .service-parag {
+  font-size: 18px;
  }
 
  .service {
-    width: 300px;
-    margin-left: 280px;
+    width: 700px;
+    padding-left: 450px;
  }
  .author-img {
   width: 300px;
@@ -329,14 +337,14 @@
  }
 
  .flex-container {
-    width: 650px;
+    width: 700px;
     padding-bottom: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    margin-left: 260px;
+    margin-left: 380px;
  }
 
  .square {
@@ -363,6 +371,11 @@
  .square-icn {
   height: 40px;
   width: 40px;
+  
+ }
+
+ .square-parag {
+  text-align: center;
  }
  .advert-link {
   text-decoration: none;
