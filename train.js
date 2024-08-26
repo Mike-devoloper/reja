@@ -25,14 +25,35 @@ console.log("train js file ishga tushdi");
 // MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 
 
-function counterLetter(word) {
-    let count = 0;
+// function counterLetter(word) {
+//     let count = 0;
+//     for (let i = 0; i < word.length; i++) {
+//         if ('0123456789'.includes(word[i])) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+
+// console.log(counterLetter("e49727dhw32u")); 
+
+
+
+
+// C-TASK: 
+
+// Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+
+
+function checkLetter(word, letter) {
     for (let i = 0; i < word.length; i++) {
-        if ('0123456789'.includes(word[i])) {
-            count++;
+        if (!letter.includes(word[i])) {
+           return false;
         }
     }
-    return count;
+    return true;
 }
 
-console.log(counterLetter("e49727dhw32u")); 
+console.log(checkLetter("mit15sila", "l15tisima" )); 
+
