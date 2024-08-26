@@ -43,7 +43,7 @@ document.addEventListener("click", function(e) {
     if(e.target.classList.contains("delete-me")) {
         alert("siz delete tugmasini bosdingiz");
         if(confirm("aniq o'chirmoqchimisiz ?")) {
-            axios.post("/delete-item", {id: e.target.getAttribute("data-id")})
+            axios.post("/delete-item", {id: e.target.getAttribute("data_id")})
             .then((response) => {
                 e.target.parentElement.parentElement.remove();
             }).catch((err) => {
