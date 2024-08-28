@@ -1,3 +1,5 @@
+
+
 console.log("Frontend ejs ishga tushdi");
 function itemTemplate(item) {
     return `
@@ -6,10 +8,10 @@ function itemTemplate(item) {
             >
                 <span class="item-text">${item.reja}</span>
                 <div>
-                    <button data_id="${item._id}" class="edit-me btn-secondary btn-sm mr-1">
+                    <button data-id="${item._id}" class="edit-me btn-secondary btn-sm mr-1">
                         O'zgartirish
                     </button>
-                    <button  data_id="${item._id}" class="delete-me btn btn-danger btn-sm">Ochirish</button>
+                    <button  data-id="${item._id}" class="delete-me btn btn-danger btn-sm">Ochirish</button>
                 </div>
             </li>
     `;
@@ -43,7 +45,7 @@ document.addEventListener("click", function(e) {
     if(e.target.classList.contains("delete-me")) {
         alert("siz delete tugmasini bosdingiz");
         if(confirm("aniq o'chirmoqchimisiz ?")) {
-            axios.post("/delete-item", {id: e.target.getAttribute("data_id")})
+            axios.post("/delete-item", {id: e.target.getAttribute("data-id")})
             .then((response) => {
                 e.target.parentElement.parentElement.remove();
             }).catch((err) => {
@@ -53,6 +55,26 @@ document.addEventListener("click", function(e) {
     } 
 
     if(e.target.classList.contains("edit-me")) {
-        alert("siz edit buttondi bosdingiz");
+        let userInput = prompt("O'zgartirishingizni kiriting", e.target.parentElement.parentElement.querySelector(".item-text").innerHTML)
+        if(userInput) {
+            axios.post("/edit-item", {id: e.target.getAttribute("data-id"),
+        new_input: userInput})
+        .then((response) => {
+            console.log(response.data);
+            e.target.parentElement.parentElement.querySelector(".item-text").innerHTML = userInput;
+        })
+        .catch((err) => {
+            console.log("Iltimos qaytadan harakat qiling");
+        })
+        }
+        
     }
+});
+
+document.querySelector(".clean-all").addEventListener("click", function() {
+    axios.post("/delete-all", {delete_all: true})
+    .then((response) => {
+        alert(response.data.state);
+        document.location.reload();
+    })
 });
