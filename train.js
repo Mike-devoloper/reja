@@ -66,54 +66,66 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 
 */
 
-const moment = require("moment");
+// const moment = require("moment");
 
-class Shop {
-    constructor(non, lagmon, cola) {
-        this.inventory = {
-            non: non,
-            lagmon: lagmon,
-            cola: cola
-        };
-    }
+// class Shop {
+//     constructor(non, lagmon, cola) {
+//         this.inventory = {
+//             non: non,
+//             lagmon: lagmon,
+//             cola: cola
+//         };
+//     }
 
 
-    qoldiq() {
-        const currentTime = moment().format("HH:mm:ss");
-        console.log(`Hozir ${currentTime}da ${this.inventory.non}ta non, ${this.inventory.lagmon}ta lagmon va ${this.inventory.cola}ta cola mavjud!`);
-    }
+//     qoldiq() {
+//         const currentTime = moment().format("HH:mm:ss");
+//         console.log(`Hozir ${currentTime}da ${this.inventory.non}ta non, ${this.inventory.lagmon}ta lagmon va ${this.inventory.cola}ta cola mavjud!`);
+//     }
 
-    sotish(product, quantity) {
-        if (this.inventory[product] !== undefined) {
-            if (this.inventory[product] >= quantity) {
-                this.inventory[product] -= quantity;
-                const currentTime = moment().format("HH:mm:ss");
-                console.log(`${currentTime}da ${quantity}ta ${product} sotildi.`);
-            } else {
-                console.log(`Yeterli ${product} mavjud emas.`);
-            }
-        } else {
-            console.log(`Bunday mahsulot mavjud emas.`);
-        }
-    }
+//     sotish(product, quantity) {
+//         if (this.inventory[product] !== undefined) {
+//             if (this.inventory[product] >= quantity) {
+//                 this.inventory[product] -= quantity;
+//                 const currentTime = moment().format("HH:mm:ss");
+//                 console.log(`${currentTime}da ${quantity}ta ${product} sotildi.`);
+//             } else {
+//                 console.log(`Yeterli ${product} mavjud emas.`);
+//             }
+//         } else {
+//             console.log(`Bunday mahsulot mavjud emas.`);
+//         }
+//     }
 
-    qabul(product, quantity) {
-        if (this.inventory[product] !== undefined) {
-            this.inventory[product] += quantity;
-            const currentTime = moment().format("HH:mm:ss");
-            console.log(`${currentTime}da ${quantity}ta ${product} qabul qilindi.`);
-        } else {
-            console.log(`Bunday mahsulot mavjud emas.`);
-        }
-    }
+//     qabul(product, quantity) {
+//         if (this.inventory[product] !== undefined) {
+//             this.inventory[product] += quantity;
+//             const currentTime = moment().format("HH:mm:ss");
+//             console.log(`${currentTime}da ${quantity}ta ${product} qabul qilindi.`);
+//         } else {
+//             console.log(`Bunday mahsulot mavjud emas.`);
+//         }
+//     }
+// }
+
+
+// const shop = new Shop(4, 5, 2);
+// shop.qoldiq(); 
+// shop.sotish('non', 3); 
+// shop.qabul('cola', 4); 
+// shop.qoldiq(); 
+
+
+// E-TASK: 
+
+// Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+// MASALAN: getReverse("hello") return qilsin "olleh"
+
+
+function stringReverser(word) {
+    const reversed = word.split('').reverse().join('');
+    console.log(reversed);
 }
 
-
-const shop = new Shop(4, 5, 2);
-shop.qoldiq(); 
-shop.sotish('non', 3); 
-shop.qabul('cola', 4); 
-shop.qoldiq(); 
-
-
+stringReverser("hello");
 
