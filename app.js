@@ -211,6 +211,7 @@ app.post("/create-item", (req, res) => {
     console.log("/user entered");
     const new_reja = req.body.reja;
     db.collection("plans").insertOne({reja: new_reja}, (err, data) => {
+      console.log(data.ops);
        res.json(data.ops[0]);
        console.log(data.ops);
         

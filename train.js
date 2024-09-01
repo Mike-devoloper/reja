@@ -122,10 +122,33 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 // MASALAN: getReverse("hello") return qilsin "olleh"
 
 
-function stringReverser(word) {
-    const reversed = word.split('').reverse().join('');
-    console.log(reversed);
+// function stringReverser(word) {
+//     const reversed = word.split('').reverse().join('');
+//     console.log(reversed);
+// }
+
+// stringReverser("hello");
+
+/*
+F-TASK: 
+
+Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+
+*/
+
+
+function findDoublers(word) {
+    for (let i = 0; i < word.length; i++) {
+
+        for (let j = i + 1; j < word.length; j++) {
+            if (word[i] === word[j]) {
+                return true; 
+            }
+        }
+    }
+    return false; 
 }
 
-stringReverser("hello");
 
+console.log(findDoublers("hello"));  
